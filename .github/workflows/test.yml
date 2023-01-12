@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: ${{ matrix.java }}
+          distribution: zulu
       - uses: gradle/gradle-build-action@v2
         name: setup gradle caches
       - name: Gradle test
