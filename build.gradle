@@ -10,15 +10,9 @@ repositories {
  mavenCentral()
 }
 
-sourceSets {
-  main {
-    resources {
-      srcDirs += file('sub')
-    }
-  }
-}
-
 dependencies {
+  implementation 'com.example:sub'
+//  implementation project(":sub")
   testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
 }
 
